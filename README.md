@@ -1,4 +1,5 @@
-# quiz1
+# Kuis 1 Pemrograman Web 
+Membuat Kalkulator dengan HTML/CSS/Javascript
 
 21.11.4273
 
