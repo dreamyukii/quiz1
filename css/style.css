@@ -1,12 +1,9 @@
-*, *::before,*::after{
-    box-sizing: border-box;
-    font-family: 'Ubuntu', sans-serif;
-}
 
 
-.body{
+body{
     margin: 0;
     padding: 0;
+    background-color: #363732;
 }
 
 
@@ -20,18 +17,26 @@
     display: grid;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    grid-template-columns: repeat(5,50px);
-    grid-template-rows:  repeat(5,50px);
+    min-height: 50vh;
+    grid-template-columns: repeat(4,200px);
+    grid-template-rows: auto;
 }
 .calculatorBody button{
-    color: red;
+    color: white;
+    background-color: #01161E;
     cursor: pointer;
-    font-size: 2rem;
-    border: 2px solid blue;
-    outline: none;
+    font-size: 100px;
+    border: none;
 }
 
 .calculatorBody button:hover{
-    background-color: aqua;
+    background-color: #598392;
+}
+
+.span-button{
+    grid-column: span 2;
+}
+
+.operation-button{
+    font-size: 200px;
 }
