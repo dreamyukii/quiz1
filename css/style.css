@@ -1,18 +1,42 @@
+/* 
+    Kelihatannya kita perlu color template (Suggestion)
+
+    #114B5F , #028090 , #E4FDE1 , #456990 , #F45B69 -Sultan (Sakura-Blue)
+    #ff6b35, #f7c59f, #efefd0, #004e89, #1a659e -Sultan (Orange-Blue)
+*/
 
 
+/* Style Background */
 body{
-    margin: 0;
     padding: 0;
-    background-color: #363732;
+    margin: 0;
+    background: linear-gradient(to bottom right, #ff6b35, #f7c59f, #efefd0) ;
+    background-size: 400%, 400%;
+    animation: gradient 10s ease infinite;
+    height: 100vh; /* fix bug bagian bawah back terpotong, idk what did it do */
+}
+/* Keyframes untuk gradient background */
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
-
+/* Style Output Kalkulator */
 .output-calc{
     font-size: 50px;
     grid-column: 1 / -1;
     background-color: gray;
+    display: flex;
 }
 
+/* Style Body */
 .calculatorBody{
     display: grid;
     justify-content: center;
@@ -21,6 +45,8 @@ body{
     grid-template-columns: repeat(4,200px);
     grid-template-rows: auto;
 }
+
+/* Style Tombol Kalkulator */
 .calculatorBody button{
     color: white;
     background-color: #01161E;
@@ -29,14 +55,17 @@ body{
     border: none;
 }
 
+/* Style Tombol Kalkulator ketika di hover */
 .calculatorBody button:hover{
     background-color: #598392;
 }
 
+/* Span untuk tombol clear dan backspace??? */
 .span-button{
     grid-column: span 2;
 }
 
+/* I had no idea what is this thing do? */
 .operation-button{
-    font-size: 200px;
+    font-size: 20px;
 }
