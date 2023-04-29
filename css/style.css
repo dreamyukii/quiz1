@@ -8,12 +8,14 @@
 
 /* Style Background */
 body{
-    padding: 0;
-    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: linear-gradient(to bottom right, #ff6b35, #f7c59f, #efefd0) ;
     background-size: 400%, 400%;
     animation: gradient 10s ease infinite;
-    height: 100vh; /* fix bug bagian bawah back terpotong, idk what did it do */
+    height: 100vh; 
+    /* fix bug bagian bawah back terpotong, idk what did it do */
 }
 /* Keyframes untuk gradient background */
 @keyframes gradient {
@@ -28,44 +30,75 @@ body{
 	}
 }
 
+
+.output{
+    text-align:end;
+    padding: 4px;
+    width: 200px;
+    background-color: rgb(109, 150, 105);
+}
+
+.kalkulator{
+    background-color: gray;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.tombol-calc{
+    display: flex;
+    flex-wrap: wrap;
+    width: 250px;
+}
+
+button{
+    font-size: 20px;
+    color: #ff6b35;
+    width: 50px;
+    margin: 2px;
+}
+
+
+
+
+
 /* Style Output Kalkulator */
-.output-calc{
+/* .output-calc{
     font-size: 50px;
     grid-column: 1 / -1;
     background-color: gray;
     display: flex;
-}
+} */
 
 /* Style Body */
-.calculatorBody{
+/* .calculatorBody{
     display: grid;
     justify-content: center;
     align-items: center;
     min-height: 50vh;
     grid-template-columns: repeat(4,200px);
     grid-template-rows: auto;
-}
+} */
 
 /* Style Tombol Kalkulator */
-.calculatorBody button{
+/* .calculatorBody button{
     color: white;
     background-color: #01161E;
     cursor: pointer;
     font-size: 100px;
     border: none;
-}
+} */
 
 /* Style Tombol Kalkulator ketika di hover */
-.calculatorBody button:hover{
+/* .calculatorBody button:hover{
     background-color: #598392;
-}
+} */
 
 /* Span untuk tombol clear dan backspace??? */
-.span-button{
+/* .span-button{
     grid-column: span 2;
-}
+} */
 
 /* I had no idea what is this thing do? */
-.operation-button{
+/* .operation-button{
     font-size: 20px;
-}
+} */
