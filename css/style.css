@@ -5,15 +5,41 @@
     #ff6b35, #f7c59f, #efefd0, #004e89, #1a659e -Sultan (Orange-Blue)
 */
 
+/* variabel */
+:root {
+    /* color var */
+    --orange1 : #ff6b35;
+    --orange2 : #f7c59f;
+    --orange3 : #efefd0;
 
-/* Style Background */
+    /* boder radius var */
+    --edge-boder : 25px;
+}
+
+/* Body */
 body{
+<<<<<<< Updated upstream
     padding: 0;
     margin: 0;
     background: linear-gradient(to bottom right, #ff6b35, #f7c59f, #efefd0) ;
     background-size: 400%, 400%;
     animation: gradient 10s ease infinite;
     height: 100vh; /* fix bug bagian bawah back terpotong, idk what did it do */
+=======
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Style Background */
+    background: linear-gradient(to bottom right, var(--orange1), var(--orange2), var(--orange3)) ;
+    background-size: 400%, 400%;
+    animation: gradient 10s ease infinite;
+
+    height: 100vh;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* fix bug bagian bawah back terpotong, idk what did it do */
+>>>>>>> Stashed changes
 }
 /* Keyframes untuk gradient background */
 @keyframes gradient {
@@ -28,6 +54,80 @@ body{
 	}
 }
 
+<<<<<<< Updated upstream
+=======
+
+.output{
+    /* text-align: end; */
+    font-size: 48px;
+    letter-spacing: 0.05cm;
+
+    filter: drop-shadow(0px, 50px, black);
+
+    margin: 0%;
+    width: 420px;
+    height: 180px;
+    border-top-left-radius: var(--edge-boder);
+    border-top-right-radius: var(--edge-boder);
+    background-color: var(--orange1);
+}
+
+
+/* Body Kalkulator belakang (kyknya cuma template???? kyknya g guna?)  */
+.kalkulator{
+    background-color: red;
+    height: 600px/2;
+    width: 420px/2;
+    border-radius: var(--edge-boder);
+}
+
+/* Beda ini sama button apa??? */
+.tombol-calc{
+    display: flex;
+    flex-wrap: wrap;
+    width: 420px;
+    
+    /* margin-left: 66px; */
+}
+
+/* Style Button Operand Samping */
+.operatorButton{
+    width: 66px;
+    background-color: #ff6b35;
+    color: var(--orange2);
+}
+
+/* Style Button Utama */
+button{
+    font-size: 20px;
+    color: var(--orange1);
+    border: none;
+    width: 118px;
+    height: 105px;
+    margin: 0%;
+    background-color: var(--orange2);
+}
+
+/* 2 Button style atas */
+.topButton{
+    width: 66px;
+    height: 90px;
+    flex-wrap: wrap;
+    margin: 0%;
+    border: none;
+    
+    background-color: var(--orange3);
+}
+
+/* Still In Progress - Memisahkan agar tombol align kiri sedangkan text align kanan */
+.curOperand.prevOperand{
+    text-align: end;
+}
+
+
+
+
+>>>>>>> Stashed changes
 /* Style Output Kalkulator */
 .output-calc{
     font-size: 50px;
