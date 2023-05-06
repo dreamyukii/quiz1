@@ -33,14 +33,17 @@ body{
 
 .output{
     text-align:end;
-    padding: 4px;
-    width: 200px;
+    padding: 20px;
+    width: 180px;
+    height: 20px;
     background-color: rgb(109, 150, 105);
+    border-radius: 5px;
 }
 
 .kalkulator{
     background-color: gray;
-    padding: 15px;
+    width: 220px;
+    height: 250px;
     border-radius: 5px;
 }
 
