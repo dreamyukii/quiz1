@@ -16,6 +16,9 @@ body{
     animation: gradient 10s ease infinite;
     height: 100vh; 
     /* fix bug bagian bawah back terpotong, idk what did it do */
+
+    /* font Ubuntu */
+    font-family: 'Ubuntu', sans-serif;
 }
 /* Keyframes untuk gradient background */
 @keyframes gradient {
@@ -30,21 +33,28 @@ body{
 	}
 }
 
-
 .output{
-    text-align:end;
-    padding: 20px;
+    font-family: 'Ubuntu Mono', monospace;
+    text-align:right;
+    color: white;
+    padding: 15px;
+    margin: 3px;
     width: 180px;
     height: 20px;
-    background-color: rgb(109, 150, 105);
-    border-radius: 5px;
+    background-color: #394867;
+    border-radius: 10px;
 }
 
+
 .kalkulator{
-    background-color: gray;
+    background-color: #212A3E;
     width: 220px;
     height: 250px;
-    border-radius: 5px;
+    border-top: 20px solid #212A3E;
+    border-bottom: 7px solid #212A3E;
+    border-right: 10px solid #212A3E;
+    border-left: 10px solid #212A3E;
+    border-radius: 15px;
 }
 
 .tombol-calc{
@@ -55,7 +65,7 @@ body{
 
 button{
     font-size: 20px;
-    color: #ff6b35;
+    color: #212A3E;
     width: 50px;
     margin: 2px;
 }
