@@ -8,51 +8,46 @@
 
     <!-- Link Referance -->
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&family=Ubuntu+Mono&display=swap" rel="stylesheet">
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,1,200"
+    />
   </head>
   <body>
+
+    
     <div class="kalkulator">
       <div class="output">
-        <!-- output kalkulator -->
-        <div data-previous-operand></div>
-        <div data-current-operand></div>
+        <button data-all-clear class="topButton" style="border-top-left-radius: 25px;">Clr</button>
+        <button data-delete class="topButton">Del</button>
+        <div data-previous-operand class="prevOperand"></div>
+        <div data-current-operand class="curOperand"></div>
+
+
+        
       </div>
 
+      <!-- Tombol kalkulator -->
       <div class="tombol-calc">
-        <!-- Tombol kalkulator -->
-
-        <button data-all-clear style="width: 105px;">Clear</button>
-        <button data-delete >Del</button>
-        <button data-operation>*</button>
-
+        
+        <button data-operation class="operatorButton">+</button>
         <button data-number>1</button>
         <button data-number>2</button>
         <button data-number>3</button>
-        <button data-operation>+</button>
-
+        <button data-operation class="operatorButton">-</button>
         <button data-number>4</button>
         <button data-number>5</button>
         <button data-number>6</button>
-        <button data-operation>-</button>
+        <button data-operation class="operatorButton">*</button>
         <button data-number>7</button>
         <button data-number>8</button>
         <button data-number>9</button>
-
-
-
-        <button data-operation>/</button>
-        <button data-number>.</button>
-
-
-
-
-
+        <button data-operation class="operatorButton" style="border-bottom-left-radius: 25px;">/</button>
+        <button data-dot>.</button>
         <button data-number>0</button>
-        <button data-equals style="width: 105px;">=</button>
+        <button data-equals class="rightCorner"  style="border-bottom-right-radius: 25px;">=</button>
 
-      </div>
     </div>
     <script src="./js/script.js"></script>
   </body>
