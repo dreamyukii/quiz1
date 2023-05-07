@@ -63,8 +63,7 @@ body{
     width: 250px;
 }
 
-<<<<<<< Updated upstream
-=======
+
 /* Style Button Operand Samping */
 .operatorButton{
     width: 66px;
@@ -73,7 +72,6 @@ body{
 }
 
 /* Style Button Utama */
->>>>>>> Stashed changes
 button{
     font-size: 20px;
     color: #212A3E;
